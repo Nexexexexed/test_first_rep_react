@@ -1,0 +1,153 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.ico-menu{
+    max-width: 16px;
+    max-height: 13px;
+}
+
+button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+a {
+    color: black;
+    text-decoration: none; 
+}
+
+
+a:hover{
+    color:#f26123;
+    transition: all 0.15s ease-out;
+}
+
+ul {
+    list-style-type: none; 
+   }
+
+
+.header-el{
+    padding: 0px 10px;
+}
+
+
+
+.site-header{
+    display: flex;
+    background: transparent;
+    justify-content: space-between;
+    padding: 0px 40px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above the sliding menu */
+}
+
+.site-header-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+}
+.site-header-left{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+}
+
+.header-el-logo{
+    margin: 0px 0px 0px 40px;
+}
+
+.header-el-auth{
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding:3px 10px;
+}
+
+
+
+
+.wrapper{
+    width: 100%;
+    max-width: 1216px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-nav-row{
+    display: flex;
+}
+
+.header-nav-item{
+    padding: 10px 0px;
+}
+
+.header-nav-subcol{
+    margin-right: 60px ;
+}
+
+.header-nav-h{
+    font-size: 25px;
+}
+
+.header-nav-section{
+    border-right: 0.5px solid rgb(188, 188, 188);
+    padding: 0px 40px;
+}
+
+.header-nav-inner{
+    display: flex;
+}
+
+.header-nav-action{
+    padding: 10px ;
+    margin: 30px 0px;
+}
+
+.header-nav-action-button{
+    color: #fff;
+    padding: 10px ;
+    background-color: #f26123;
+    font-size: 16px;
+}
+
+a.header-nav-action-button:hover{
+    color:#000000;
+    transition: all 0.15s ease-out;
+}
+
+
+
+.header-nav-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly below */
+    visibility: hidden; /* Hidden by default */
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s 0.5s;
+    margin: 80px 0px 0px 0px;
+    background-color: #fff;
+}
+  
+.header-nav-wrap.show {
+opacity: 1;
+transform: translateY(0); /* Move up to original position */
+visibility: visible;
+transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s;
+}
+

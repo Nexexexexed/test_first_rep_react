@@ -1,13 +1,11 @@
-
-import './App.css';
-import {Button} from 'react-bootstrap'
-import {Header} from './Components/Header'
+import React from 'react'
+import Header from './Components/BaseComp/Header'
 
 function App() {
+  
   return (
     <div className="App">
       <Header/>
-      <Button/>
     </div>
   );
 }
