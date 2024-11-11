@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import image_head from "../../images/logo_h.svg";
 import image_menu from "../../images/menu-ico.png";
 import image_krest from "../../images/krest-ico.png"
+import telephone from "../../images/telephone-ico.png"
+import map from "../../images/map-ico.png"
+import person_auth from "../../images/person-auth-ico.png"
+import person_non_auth from "../../images/person-non-auth-ico.png"
+
 import './Header.css';
 
 const Header = () => {
@@ -12,8 +17,8 @@ const Header = () => {
   };
 
   return (
-    <>
-      <header className='site-header'>
+    <div className='head'>
+      <header className={`site-header ${flagdepl ? "active":''}`}>
         <div className="site-header-left">
           <button onClick={Deployment} className='header-el header-el-menu'>
             <i><img className='ico-menu' src={flagdepl ? image_krest : image_menu} /></i>МЕНЮ
@@ -23,9 +28,9 @@ const Header = () => {
           </a>
         </div>
         <div className='site-header-right'>
-          <div className='header-el'><a href="#"><span></span>МОСКВА</a></div>
-          <a className='header-el' href="tel:88001007007"><span></span>8 800 1 007 007</a>
-          <span className='header-el header-el-auth'><a href="#"><span></span>Авторизация</a></span>
+          <div className='header-el'><a href="#"><span className='img-ico'><img src={map}></img></span>МОСКВА</a></div>
+          <a className='header-el' href="tel:88001007007"><span className='img-ico'><img src={telephone}></img></span>8 800 1 007 007</a>
+          <span className='header-el header-el-auth'><a href="#"><span className='img-ico'><img src={person_non_auth}></img></span>Авторизация</a></span>
         </div>
       </header>
 
@@ -79,7 +84,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-              <div className='header-nav-section'>
+              <div className='header-nav-section header-nav-last-section'>
                 <div className='header-nav-action'>
                   <a href='/' className='header-nav-action-button'>Уведомить о страховом случае</a>
                 </div>
@@ -97,7 +102,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
