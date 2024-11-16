@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.content-inner{
+    color: #fff;
+}
+
+.product-class{
+    min-height: 560px;
+
+}
+
+.product-class h1{
+    margin-bottom: 40px;
+    font-size: 4rem;
+
+}
+
+.product-class p{
+    font-size: 2.2rem;
+}
+
+.info{
+    padding: 64px 80px 64px 72px;
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    width: 70rem;
+}
