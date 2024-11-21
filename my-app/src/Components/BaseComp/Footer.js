@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className='site-footer'>
         <hr className='line'></hr>
-        <div className='wrapper-footer wrapper'>
+        <div className='wrapper-footer'>
             <nav className='footer_nav'>
                 <a className='footer-nav-item'>Компания</a>
                 <a className='footer-nav-item'>Пресс-центр</a>
